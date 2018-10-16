@@ -1,2 +1,11 @@
 # Game-Set-Scrape
-A collection of Python scripts for scraping Wikipedia for information about the winners of every tennis Grand Slam since 1877.
+
+This is a Python web scraper. It parses selected Wikipedia pages for info about every Wimbledon women's tennis Grand Slam tournament since 1877. It gathers the following data:**Tournament Year, Date of Final, Winner's Name**.
+
+**Libraries referenced:***
+Beautiful Soup 4 (https://www.crummy.com/software/BeautifulSoup/)
+requests (http://docs.python-requests.org/en/master/)
+re (https://docs.python.org/3/library/re.html)
+os (https://docs.python.org/3/library/os.html)
+openpyxl (https://openpyxl.readthedocs.io/en/stable/)
+
