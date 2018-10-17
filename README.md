@@ -13,7 +13,7 @@ The script saves the data to an Excel spreadsheet (.xlsx file). You should creat
 wb = openpyxl.load_workbook(os.path.expanduser("~/all_womens_tennis_grand_slam_winners.xlsx"))
 ```
 
-**Libraries referenced:**  
+**Requirements**  
 Beautiful Soup 4 (https://www.crummy.com/software/BeautifulSoup/)  
 requests (http://docs.python-requests.org/en/master/)  
 re (https://docs.python.org/3/library/re.html)  
