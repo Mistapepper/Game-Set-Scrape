@@ -1,6 +1,13 @@
-# Game-Set-Scrape
+# Game Set Scrape
 
-This is a Python web scraper. It parses selected Wikipedia pages for info about every Wimbledon women's tennis Grand Slam tournament since 1884. It gathers the following data: **Tournament Year, Date of Final, Winner's Name**. It then saves the results in an empty Excel spreadsheet.
+
+This is a Python web scraper. It parses selected Wikipedia pages for info about Wimbledon tennis Grand Slam tournament winners from 1884-2016. It gathers the following data: **Tournament Year, Date of Final, Name of Winner**. It saves the results to an empty .xlsx Excel spreadsheet.
+
+#------------------------------------------------------README-----------------------------------------------------------------------------
+
+## Usage
+
+
 
 **Libraries referenced:**  
 Beautiful Soup 4 (https://www.crummy.com/software/BeautifulSoup/)  
