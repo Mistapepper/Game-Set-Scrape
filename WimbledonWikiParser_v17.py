@@ -1,6 +1,6 @@
 #------------------------------------------------------README-----------------------------------------------------------------------------
 
-# This is a Python web scraper. It parses selected Wikipedia pages for info about Wimbledon tennis Grand Slam tournament winners since 1884. It gathers the following data: Tournament Year, Date of Final, Name of Winner. Then it saves the results in an empty .xlsx spreadsheet to the root location of your hard drive (that part won't work in this example though).
+# This is a Python web scraper. It parses selected Wikipedia pages for info about Wimbledon tennis Grand Slam tournament winners from 1884-2016. It gathers the following data: Tournament Year, Date of Final, Name of Winner. Then it saves the results in an empty .xlsx spreadsheet to the root location of your hard drive (that part won't work in this example though).
 
 #------------------------------------------------------END README-------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ yearCol = sheet['B']
 DOFCol = sheet['A']
 targetRow = 1
 
-while year <= 2017:
+while year <= 2016:
 
 for cell in winnerCol:
 response = requests.get(url.format(tourneyYear=year))
