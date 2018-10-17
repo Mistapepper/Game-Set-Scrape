@@ -1,6 +1,6 @@
 #------------------------------------------------------README-----------------------------------------------------------------------------
 
-# This is a Python web scraper. It parses selected Wikipedia pages for info about every Wimbledon women's tennis Grand Slam tournament since 1884. It gathers the following data: Tournament Year, Date of Final, Name of Winner. Then it saves the results in an empty .xlsx spreadsheet to the root location of your hard drive (that part won't work in this example though).
+# This is a Python web scraper. It parses selected Wikipedia pages for info about Wimbledon tennis Grand Slam tournament winners since 1884. It gathers the following data: Tournament Year, Date of Final, Name of Winner. Then it saves the results in an empty .xlsx spreadsheet to the root location of your hard drive (that part won't work in this example though).
 
 #------------------------------------------------------END README-------------------------------------------------------------------------
 
