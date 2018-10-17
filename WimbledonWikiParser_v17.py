@@ -11,9 +11,9 @@ import openpyxl
 import os
 
 year = 1884
-"url = ""https://en.wikipedia.org/wiki/{tourneyYear}_Wimbledon_Championships"""
+url = "https://en.wikipedia.org/wiki/{tourneyYear}_Wimbledon_Championships"
 
-"wb = openpyxl.load_workbook(os.path.expanduser(""~/all_womens_tennis_grand_slam_winners.xlsx""))"
+wb = openpyxl.load_workbook(os.path.expanduser("~/all_womens_tennis_grand_slam_winners.xlsx"))
 sheet = wb.get_sheet_by_name('Sheet1')
 winnerCol = sheet['D']
 yearCol = sheet['B']
@@ -25,9 +25,9 @@ while year <= 2017:
 for cell in winnerCol:
 response = requests.get(url.format(tourneyYear=year))
 text = response.text
-"soup = BeautifulSoup(text, ""html.parser"")"
+soup = BeautifulSoup(text, "html.parser")
 
-"overviewTable = soup.find('table', attrs ={'class':""infobox vevent""})"
+overviewTable = soup.find('table', attrs ={'class':"infobox vevent"})
 
 if targetRow == 1:
 targetRow += 1
@@ -45,7 +45,7 @@ targetRow += 1
 year += 1
 continue
 
-"womensSingles = overviewTable.find('a'[0], title=re.compile (""Women's Singles""))"
+womensSingles = overviewTable.find('a'[0], title=re.compile ("Women's Singles"))
 
 womensSinglesInfo = womensSingles.parent.parent #this gives you the 'tr' of the 10th 'th' in the 'table'
 
@@ -71,10 +71,10 @@ wb.save('all_womens_tennis_grand_slam_winners.xlsx')
 
 for cell in DOFCol:
 if cell.row == targetRow:
-"dateHeader = overviewTable.find('th', attrs={""scope"":""row""})"
+dateHeader = overviewTable.find('th', attrs={"scope":"row"})
 date = dateHeader.parent
-"nDash = ""–"""
-"hyphen = ""-"""
+nDash = "–"
+hyphen = "-"
 words = date.find('td').get_text().split()
 
 if nDash and hyphen in words:
